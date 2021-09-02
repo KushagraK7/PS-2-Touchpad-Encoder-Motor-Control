@@ -113,7 +113,6 @@ void loop() {
 
    m = (int)mstate;
    x = (int)mx;
-   //y = (int)my;
 
    Serial.println(p);
 
@@ -121,7 +120,6 @@ void loop() {
 
    if(m == 9) p = 0;
    
-   //if(p >= 0)
    pidcontroller.setpoint(p); // The "goal" the PID controller tries to "reach"
 
    motor_pwm_value = pidcontroller.compute(encoder_count);  //Let the PID compute the value, returns the calculated optimal output
