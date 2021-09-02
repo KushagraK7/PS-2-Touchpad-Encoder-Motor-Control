@@ -126,7 +126,7 @@ void loop() {
 
    if (motor_pwm_value > 0) // if the motor_pwm_value is greater than zero we rotate the  motor in clockwise direction
     motor_ccw(motor_pwm_value);
-  else // else we move it in a counter clockwise direction
+   else // else we move it in a counter clockwise direction
     motor_cw(abs(motor_pwm_value));
      
 }
